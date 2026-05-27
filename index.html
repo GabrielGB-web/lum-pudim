@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUMÉ Pudim</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#f8f1eb;
+      color:#7a4c32;
+      font-family:'Montserrat', sans-serif;
+      overflow-x:hidden;
+    }
+
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+      position:relative;
+      background:
+      linear-gradient(rgba(248,241,235,.94), rgba(248,241,235,.94)),
+      url('https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?q=80&w=1600&auto=format&fit=crop') center/cover;
+    }
+
+    .hero{
+      text-align:center;
+      max-width:760px;
+    }
+
+    .logo-img{
+      width:270px;
+      margin-bottom:20px;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,.08));
+    }
+
+    .subtitle{
+      margin-top:10px;
+      font-size:30px;
+      font-family:'Cormorant Garamond', serif;
+      color:#b67b5a;
+      letter-spacing:1px;
+    }
+
+    .desc{
+      margin-top:25px;
+      line-height:1.9;
+      font-size:16px;
+      color:#7d6656;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:35px;
+      padding:18px 40px;
+      background:#c98d69;
+      color:white;
+      text-decoration:none;
+      border-radius:50px;
+      font-size:15px;
+      font-weight:600;
+      transition:.3s;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .btn:hover{
+      transform:translateY(-4px);
+      background:#b67853;
+    }
+
+    section{
+      padding:90px 8%;
+    }
+
+    .title{
+      text-align:center;
+      font-size:58px;
+      font-family:'Cormorant Garamond', serif;
+      margin-bottom:15px;
+      color:#8c5a3c;
+    }
+
+    .text-center{
+      text-align:center;
+      max-width:720px;
+      margin:0 auto 60px;
+      color:#8a7568;
+      line-height:1.8;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:35px;
+    }
+
+    .card{
+      background:white;
+      border-radius:32px;
+      overflow:hidden;
+      box-shadow:0 15px 40px rgba(0,0,0,.06);
+      transition:.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:340px;
+      object-fit:cover;
+      background:#fff;
+    }
+
+    .card-content{
+      padding:35px;
+      text-align:center;
+    }
+
+    .card h3{
+      font-family:'Cormorant Garamond', serif;
+      font-size:40px;
+      margin-bottom:15px;
+      color:#8c5a3c;
+    }
+
+    .card p{
+      color:#8b7567;
+      line-height:1.7;
+    }
+
+    .price{
+      margin-top:22px;
+      font-size:30px;
+      color:#b67853;
+      font-weight:700;
+    }
+
+    .contact{
+      background:white;
+      border-radius:40px;
+      text-align:center;
+      padding:80px 30px;
+      box-shadow:0 15px 50px rgba(0,0,0,.05);
+    }
+
+    .contact h2{
+      font-family:'Cormorant Garamond', serif;
+      font-size:62px;
+      margin-bottom:15px;
+      color:#8c5a3c;
+    }
+
+    .contact p{
+      color:#8b7567;
+      line-height:1.8;
+    }
+
+    .phone{
+      font-size:42px;
+      margin:35px 0;
+      font-weight:700;
+      color:#b67853;
+    }
+
+    footer{
+      padding:35px;
+      text-align:center;
+      background:#f1e5dc;
+      color:#8b7567;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      header{
+        padding:30px 20px;
+      }
+
+      .logo-img{
+        width:200px;
+      }
+
+      .title{
+        font-size:42px;
+      }
+
+      .subtitle{
+        font-size:24px;
+      }
+
+      .contact h2{
+        font-size:42px;
+      }
+
+      .phone{
+        font-size:30px;
+      }
+
+      .card img{
+        height:280px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <div class="hero">
+
+      <img
+        class="logo-img"
+        src="https://i.ibb.co/4ZYz0gxz/LOGO-GTA-3.png"
+        alt="LUMÉ Pudim"
+      >
+
+      <p class="subtitle">
+        Pudim que acolhe. Sabor que encanta.
+      </p>
+
+      <p class="desc">
+        Na LUMÉ, cada pudim é preparado artesanalmente
+        com ingredientes selecionados e muito carinho,
+        trazendo sabor, delicadeza e momentos especiais
+        para você e sua família.
+      </p>
+
+      <a
+        class="btn"
+        href="https://wa.me/5594991211523"
+        target="_blank"
+      >
+        Fazer Pedido no WhatsApp
+      </a>
+
+    </div>
+
+  </header>
+
+  <section id="produtos">
+
+    <h2 class="title">
+      Nossos Pudins
+    </h2>
+
+    <p class="text-center">
+      Cremosos, delicados e irresistíveis.
+      Conheça os tamanhos disponíveis do nosso tradicional pudim artesanal.
+    </p>
+
+    <div class="cards">
+
+      <!-- PUDIM 120ML -->
+
+      <div class="card">
+
+        <img
+          src="https://i.ibb.co/35ygnnCW/image.png"
+          alt="Pudim Tradicional 120ml"
+        >
+
+        <div class="card-content">
+
+          <h3>
+            Pudim Tradicional 120ml
+          </h3>
+
+          <p>
+            O tamanho perfeito para adoçar seu dia
+            com muito sabor e cremosidade.
+          </p>
+
+          <div class="price">
+            R$ 10,00
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PUDIM 500ML -->
+
+      <div class="card">
+
+        <img
+          src="https://i.ibb.co/0RkdmSs8/image.png"
+          alt="Pudim Tradicional 500ml"
+        >
+
+        <div class="card-content">
+
+          <h3>
+            Pudim Tradicional 500ml
+          </h3>
+
+          <p>
+            Ideal para compartilhar momentos doces
+            e especiais com quem você ama.
+          </p>
+
+          <div class="price">
+            R$ 45,00
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="contact">
+
+      <h2>
+        Faça seu Pedido
+      </h2>
+
+      <p>
+        Entre em contato pelo WhatsApp e peça agora
+        seu pudim artesanal da LUMÉ.
+      </p>
+
+      <div class="phone">
+        (94) 99121-1523
+      </div>
+
+      <a
+        class="btn"
+        href="https://wa.me/5594991211523"
+        target="_blank"
+      >
+        Pedir Agora
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 LUMÉ Pudim — Feito com carinho para encantar.
+  </footer>
+
+</body>
+</html>
